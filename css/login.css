@@ -1,0 +1,11 @@
+:root{
+    --primary-green: #2C6930;
+    --secondary-green: #3FA647;
+    --light-bg: #F5F5F5;
+    --text-color: #333333;
+    --border-color: #D1D1D1;
+    --hover-green: #4CAF50;
+    --hover-light: #E8F5E9;
+    --error-red: #D32F2F;
+    --warning-amber: #FFA000;
+}
