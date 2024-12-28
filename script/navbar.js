@@ -46,6 +46,27 @@ document.addEventListener('DOMContentLoaded', function(){
         if(link.href === window.location.href){
             link.classList.add('active');
             document.title = link.textContent.toLocaleUpperCase();
+            const logout = document.getElementById('logout');
+
+    logout.addEventListener('click', function(e){
+        e.preventDefault();
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('POST', '../modals/logout.php', true);
+
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+        xhr.onload = function(){
+            if(this.status === 200){
+               location.reload();
+            }
+        }
+        const data = (`current_page=${link.href}`);
+        xhr.send(data);
+    });
         }
     });
+
+    
+
 });

@@ -81,7 +81,7 @@
             <a href="" class="profile__dropdown--links">help</a>
         </li>
         <li class="profile__dropdown--items">
-            <a href="" class="profile__dropdown--links">log out</a>
+            <a href="../modals/logout.php" class="profile__dropdown--links" id="logout">log out</a>
         </li>
     </ul>
 </div>
@@ -90,3 +90,5 @@
 <div class="side__bar--menu">
 
 </div>
+
+<!-- login modal -->

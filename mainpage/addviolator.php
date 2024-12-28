@@ -1,5 +1,10 @@
 <?php
 include('../conn/conn.php');
+
+session_start();
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    require_once('../modals/login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +17,7 @@ include('../conn/conn.php');
     <link rel="stylesheet" href="../css/addviolator.css">
     <link rel="stylesheet" href="../css/show_details_modal.css">
     <link rel="stylesheet" href="../css/universal_modal.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Document</title>
 </head>
 
@@ -144,6 +150,7 @@ include('../conn/conn.php');
     require_once('../modals/universal_modal.php');
     ?>
     <!-- script section-->
+    <script src="../script/login.js"></script>
     <script src="../script/universal_modal.js"></script>
     <script src="../script/send_violation_form_to_sql.js"></script>
     <script src="../script/send_req_for_article_section.js">
