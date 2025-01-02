@@ -238,6 +238,24 @@
   background-color: var(--light-bg);
 }
 
+.container {
+  position: absolute;
+  height: calc(90% + 20px);
+  width: calc(80% + 50px);
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  background-color: var(--light-bg);
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 /*kebab menu is coming next update*/
 
 @media screen and (max-width: 960px) {
@@ -310,16 +328,21 @@
     top: 80px;
     width: 60vw;
   }
+
+  .container {
+    height: calc(100% - 80px);
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
   .navbar {
     display: grid;
     position: absolute;
     left: -1000px;
     opacity: -1;
     z-index: -1;
-    height: 95%;
+    height: calc(100% - 80px);
     width: 95%;
     grid-template-columns: auto;
     overflow-y: auto;

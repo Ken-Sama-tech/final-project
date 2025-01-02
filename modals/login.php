@@ -4,7 +4,7 @@
             <img src="../img/galvanlogo.svg" alt="Galvan Logo" id="login__logo">
         </div>
         <div class="green__line"></div>
-        <label for=" username" class="login__modal--label">Username:</label>
+        <label for="username" class="login__modal--label">Username:</label>
         <input type="text" name="username" id="username" class="login__modal--inpt">
         <span class="login__modal--error" hidden></span>
         <label for="password" class="login__modal--label">Password:</label>

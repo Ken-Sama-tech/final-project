@@ -23,22 +23,19 @@ document.addEventListener('DOMContentLoaded', function(){
         xhr.onload = function(){
             if(this.status === 200){
 
-              if(this.response === 'Invalid Email'){
-                responseContainer.classList.add('response__contain--error');
-                responseContainer.innerHTML = this.responseText;
-              }else if(this.response == 'Data Inserted Successfully'){
+              if(this.response == 'Data Inserted Successfully'){
                 responseContainer.classList.add('response__success');
                 responseContainer.innerHTML = this.responseText;
-              }else if(this.responseText == 'Failed To Insert Data'){
+              } else if (this.responseText == 'You somehow manage to infiltrate, but no you cant send this'){
                 responseContainer.classList.add('response__contain--error');
-                responseContainer.innerHTML = this.responseText;
+                responseContainer.innerHTML =  this.responseText;
               }else{
                 responseContainer.classList.add('response__unknown');
                 responseContainer.innerHTML = this.responseText;
               }
             }else{
-                responseContainer.classList.add('response__contain--error');
-                responseContainer.innerHTML = 'Request Failed With Status :' + this.status;
+              responseContainer.classList.add('response__contain--error');
+              responseContainer.innerHTML = 'Request Failed With Status :' + this.status;
             }
         }
         

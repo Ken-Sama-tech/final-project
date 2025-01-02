@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
         const universalModal = document.querySelector('.universal__modal--wrapper');
 
         universalModal.classList.remove('show-modal');
+        location.reload();
     });
 });

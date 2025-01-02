@@ -35,9 +35,12 @@ $escaped_present_address = mysqli_real_escape_string($conn, $present_address);
 $escaped_permanent_address = mysqli_real_escape_string($conn, $permanent_address);
 
 
-try {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+session_start();
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+        echo 'You somehow manage to infiltrate, but no you cant send this';
+    } else {
         if (empty($lrn)) {
             echo 'Missing learner reference number';
         } else if (empty($lastname)) {
@@ -62,10 +65,8 @@ try {
                     echo 'Failed To Insert Data';
                 }
             } else {
-                echo 'Invalid Email';
+                echo 'Invalid email';
             }
         }
     }
-} catch (mysqli_sql_exception) {
-    echo 'duplicate lrn';
 }
