@@ -56,7 +56,7 @@
 }
 
 .thead {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   text-transform: capitalize;
   position: sticky;
   top: 5%;
@@ -66,7 +66,7 @@
 
 .table__data {
   text-align: middle;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   text-transform: capitalize;
   word-spacing: 5px;
   word-spacing: 1.5px;
@@ -77,4 +77,10 @@
 .not-included {
   opacity: 0;
   z-index: 0;
+}
+
+.data__not--found {
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 2rem;
 }

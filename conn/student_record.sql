@@ -106,7 +106,7 @@ INSERT INTO `articlesections` (`articleSectionID`, `articleID`, `articleSection`
 (14, 2, 'section 5', 'metal na buckles ng sinturon na maaring gamitin upang makapanakit ng mga kamag-aral'),
 (15, 2, 'section 6', 'Pagdadala ng baril, patalim o mga nakakasakit at nakakamatay na mga bagay.'),
 (16, 2, 'section 7', 'Pagdadala ng pampasabog o mga bagay na may kinalaman sa terorismo'),
-(17, 2, 'section 8', 'Vandalismo at iba’t ibang uri nito. Paglilinis o pagpipintura ng lugar na dinumihan o sinulatan at Komperesiya sa mga magulang. Pagpapatawag at pagpapaliwanag ng magulang at Pagpasok sa Interbensyon at Programang Paggabay. Ekspulsyon at di iisyuhan ng Cer'),
+(17, 2, 'section 8', 'Vandalismo at iba’t ibang uri nito. Paglilinis o pagpipintura ng lugar na dinumihan o sinulatan at Komperesiya sa mga magulang. '),
 (18, 2, 'section 9', 'Pagdura sa kung saan saan'),
 (19, 2, 'section 10', 'Pag-iwan sa CR ng madumi matapos itong gamitin'),
 (20, 2, 'section 11', 'Paninigarilyo sa loob ng kampus'),
